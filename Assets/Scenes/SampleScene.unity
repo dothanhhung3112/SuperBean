@@ -3160,7 +3160,10 @@ MonoBehaviour:
   stageIndex: 0
   health: 3
   player: {fileID: 351576116}
-  Stages: []
+  Stages:
+  - {fileID: 1701414539}
+  - {fileID: 483293684}
+  - {fileID: 1977083558}
   UIhealth:
   - {fileID: 446625294}
   - {fileID: 287269824}
@@ -6105,7 +6108,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6671,7 +6674,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
