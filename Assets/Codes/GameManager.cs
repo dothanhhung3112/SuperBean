@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        
+
     }
     private void Update()
     {
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
             Stages[stageIndex].SetActive(true);
             PlayerReposition();
 
-            UIStage.text = "STAGE " + (stageIndex+1);          
+            UIStage.text = "STAGE " + (stageIndex + 1);
         }
         else
         {
@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
         if (health > 1)
         {
             health--;
-            UIhealth[0].color = new Color(1,0,0,0.4f); 
+            UIhealth[health].color = new Color(1, 0, 0, 0.4f);
         }
         else
         {
@@ -93,6 +93,7 @@ public class GameManager : MonoBehaviour
 
     void PlayerReposition()
     {
+        player.ResetAnim();
         player.transform.position = new Vector3(-8, 0.5f, 0);
         player.VelocityZero();
     }
